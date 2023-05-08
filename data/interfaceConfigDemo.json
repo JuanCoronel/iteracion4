@@ -1,0 +1,111 @@
+{
+	"title": "Demostracion de Alohandes Uniandes",
+	"frameH": 600,
+	"frameW": 800,
+	"bannerPath": "./src/main/resources/config/logo.png",
+	"menuBar":
+	[
+			
+		{ "menuTitle": "@Pruebas Requisitos funcionales",
+		  "options":
+			[
+				{
+					"label": "Demo Exito Requisito Funcional 7",
+					"event": "demoExitoRF7"
+				},
+				{
+					"label": "Demo Exito Requisito Funcional 8",
+					"event": "demoExitoRF8"
+				},		
+				{
+					"label": "Demo Exito Requisito Funcional 9",
+					"event": "demoExitoRF9"
+				},
+				{
+					"label": "Demo Exito Requisito Funcional 10",
+					"event": "demoExitoRF10"
+				},
+				{
+					"label": "Demo Fracaso Requisito Funcional 7",
+					"event": "demoFracasoRF7"
+				},
+				{
+					"label": "Demo Fracaso Requisito Funcional 8",
+					"event": "demoFracasoRF8"
+				},		
+				{
+					"label": "Demo Fracaso Requisito Funcional 9",
+					"event": "demoFracasoRF9"
+				},
+				{
+					"label": "Demo Fracaso Requisito Funcional 10",
+					"event": "demoFracasoRF10"
+				}
+			]
+		},
+		{ "menuTitle": "Mantenimiento",
+		  "options":
+			[
+				{
+					"label": "Mostrar log Parranderos",
+					"event": "mostrarLogParranderos"
+				},
+				{
+					"label": "Mostrar log datanucleus",
+					"event": "mostrarLogDatanuecleus"
+				},
+				{
+					"label": "Limpiar log de parranderos",
+					"event": "limpiarLogParranderos"
+				},
+				{
+					"label": "Limpiar log de datanucleus",
+					"event": "limpiarLogDatanucleus"
+				},
+				{
+					"label": "Limpiar Base de Datos",
+					"event": "limpiarBD"
+				}
+			]
+		},		
+		{ "menuTitle": "Documentacion",
+		  "options":
+			[
+				{
+					"label": "Presentación general",
+					"event": "mostrarPresentacionGeneral"
+				},
+				{
+					"label": "Modelo conceptual",
+					"event": "mostrarModeloConceptual"
+				},
+				{
+					"label": "Esquema de la BD",
+					"event": "mostrarEsquemaBD"
+				},
+				{
+					"label": "Script creación de la BD",
+					"event": "mostrarScriptBD"
+				},
+				{
+					"label": "Arquitectura de referencia",
+					"event": "mostrarArqRef"
+				},
+				{
+					"label": "Javadoc Parranderos",
+					"event": "mostrarJavadoc"
+				}
+			]
+		},		
+		{ "menuTitle": "Acerca de ...",
+		  "options":
+			[
+				{
+					"label": "Acerca de ...",
+					"event": "acercaDe"
+				}
+			]
+		}		
+	]
+}
+	

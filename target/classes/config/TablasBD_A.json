@@ -1,0 +1,20 @@
+{
+	"title": "Nombres de las tablas de AlohAndes Uniandes para la aplicación A",
+	"unidadPersistencia": "AlohAndes",
+	"tablas":
+	[
+		"ALHOANDES_SEQUENCE",
+		"A_ALOJAMIENTOS",
+		"A_CONTRATOS",
+		"A_HOSTALES",
+		"A_HOTELES",
+		"A_OPERADORES",
+		"A_PARTICULARES",
+		"A_PROPUESTAS",
+		"A_RESERVAS",
+		"A_RESIDENCIASU",
+		"A_SERVICIOS",
+		"A_USUARIOS",
+		"A_ALOJDESHABILITADOS"
+	]
+}

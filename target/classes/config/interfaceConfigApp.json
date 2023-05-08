@@ -1,0 +1,199 @@
+{
+	"title": "Aplicacion transaccional de AlohAndes Uniandes",
+	"frameH": 600,
+	"frameW": 800,
+	"bannerPath": "./src/main/resources/config/logo.png",
+	"menuBar":
+	[
+		{ "menuTitle": "Operador",
+		  "options":
+			[
+				{
+					"label": "Adicionar",
+					"event": "adicionarOperador"
+				},
+				{
+					"label": "Listar",
+					"event": "listarOperador"
+				},
+				{
+					"label": "Borrar por Id",
+					"event": "eliminarOperadorPorId"
+				},
+				{
+					"label": "Buscar por Nombre",
+					"event": "buscarOperadorPorNombre"
+				}
+			]
+		},
+
+		{ "menuTitle": "Propuestas",
+		  "options":
+			[
+				{
+					"label": "Adicionar",
+					"event": "adicionarPropuesta"
+				},
+				{
+					"label": "Listar",
+					"event": "listarPropuestas"
+				},
+				{
+					"label": "Borrar por Id",
+					"event": "eliminarPropuestaPorId"
+				},
+				{
+					"label": "Buscar por Nombre",
+					"event": "buscarPropuestaPorNombre"
+				}
+			]
+		},
+
+		{ "menuTitle": "Usuarios",
+		  "options":
+			[
+				{
+					"label": "Adicionar",
+					"event": "adicionarUsuario"
+				},
+				{
+					"label": "Listar",
+					"event": "listarUsuario"
+				},
+				{
+					"label": "Borrar por Id",
+					"event": "eliminarUsuarioPorId"
+				},
+				{
+					"label": "Buscar por Nombre",
+					"event": "buscarUsuarioPorNombre"
+				}
+			]
+		},
+
+		{ "menuTitle": "Reservas",
+		  "options":
+			[
+				{
+					"label": "Adicionar",
+					"event": "adicionarReserva"
+				},
+				{
+					"label": "Listar",
+					"event": "listarReserva"
+				},
+				{
+					"label": "Cancelar reserva por id",
+					"event": "eliminarReservaPorId"
+				},
+				{
+					"label": "Buscar por Nombre",
+					"event": "buscarReservaPorNombre"
+				},
+				{
+					"label": "Registrar Reserva Colectiva",
+					"event": "registrarReservaColectiva"
+				},
+				{
+					"label": "Eliminar Reserva Colectiva",
+					"event": "eliminarReservaColectiva"
+				}
+			]
+		},
+		{ "menuTitle": "Alojamientos",
+		  "options":
+			[
+				{
+					"label": "Adicionar Alojamiento",
+					"event": "adicionarAlojamiento"
+				},
+				{
+					"label": "Listar Alojamientos",
+					"event": "listarAlojamiento"
+				},
+				{
+					"label": "Eliminar Oferta de Alojamiento",
+					"event": "eliminarAlojamientoPorNombre"
+				},
+				{
+					"label": "Buscar Alojamiento por Nombre",
+					"event": "buscarAlojamientoPorNombre"
+				},
+				{
+					"label": "Deshabilitar oferta de alojamiento",
+					"event": "deshabilitarOfertaAlojamiento"
+				},
+				{
+					"label": "Rehabilitar oferta de alojamiento",
+					"event":"rehabilitarAlojamiento"
+				}
+			]
+		},
+		
+		{ "menuTitle": "Mantenimiento",
+		  "options":
+			[
+				{
+					"label": "Mostrar log Parranderos",
+					"event": "mostrarLogParranderos"
+				},
+				{
+					"label": "Mostrar log datanucleus",
+					"event": "mostrarLogDatanuecleus"
+				},
+				{
+					"label": "Limpiar log de parranderos",
+					"event": "limpiarLogParranderos"
+				},
+				{
+					"label": "Limpiar log de datanucleus",
+					"event": "limpiarLogDatanucleus"
+				},
+				{
+					"label": "Limpiar Base de Datos",
+					"event": "limpiarBD"
+				}
+			]
+		},		
+		{ "menuTitle": "Documentacion",
+		  "options":
+			[
+				{
+					"label": "Presentación general",
+					"event": "mostrarPresentacionGeneral"
+				},
+				{
+					"label": "Modelo conceptual",
+					"event": "mostrarModeloConceptual"
+				},
+				{
+					"label": "Esquema de la BD",
+					"event": "mostrarEsquemaBD"
+				},
+				{
+					"label": "Script creación de la BD",
+					"event": "mostrarScriptBD"
+				},
+				{
+					"label": "Arquitectura de referencia",
+					"event": "mostrarArqRef"
+				},
+				{
+					"label": "Javadoc Parranderos",
+					"event": "mostrarJavadoc"
+				}
+			]
+		},		
+		{ "menuTitle": "Acerca de ...",
+		  "options":
+			[
+				{
+					"label": "Acerca de ...",
+					"event": "acercaDe"
+				}
+			]
+		}		
+		
+	]
+}
+	
