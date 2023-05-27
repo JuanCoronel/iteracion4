@@ -5,6 +5,67 @@
 	"bannerPath": "./src/main/resources/config/logo.png",
 	"menuBar":
 	[
+		{ "menuTitle": "Consultas",
+		  "options":
+			[
+				{
+					"label": "RFC1",
+					"event": "rfc1"
+				},
+				{
+					"label": "RFC2",
+					"event": "rfc2"
+				},
+				{
+					"label": "RFC3",
+					"event": "rfc3"
+				},
+				{
+					"label": "RFC4",
+					"event": "rfc4"
+				},
+				{
+					"label": "RFC5",
+					"event": "rfc5"
+				},
+				{
+					"label": "RFC6",
+					"event": "rfc6"
+				},
+				{
+					"label": "RFC7",
+					"event": "rfc7"
+				},
+				{
+					"label": "RFC8",
+					"event": "rfc8"
+				},
+				{
+					"label": "RFC8",
+					"event": "rfc8"
+				},
+				{
+					"label": "RFC9",
+					"event": "rfc9"
+				},
+				{
+					"label": "RFC10",
+					"event": "rfc10"
+				},
+				{
+					"label": "RFC11",
+					"event": "rfc11"
+				},
+				{
+					"label": "RFC12",
+					"event": "rfc12"
+				},
+				{
+					"label": "RFC13",
+					"event": "rfc13"
+				}
+			]
+		},
 		{ "menuTitle": "Operador",
 		  "options":
 			[

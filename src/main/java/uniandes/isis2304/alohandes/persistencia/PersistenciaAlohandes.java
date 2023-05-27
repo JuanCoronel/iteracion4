@@ -565,6 +565,129 @@ public class PersistenciaAlohandes
         }
 	}
 
+    public String rfc1()
+    {
+        PersistenceManager pm = pmf.getPersistenceManager();
+        Transaction tx=pm.currentTransaction();
+        try
+        {
+            tx.begin();
+            String res = sqlAlojamiento.rfc1(pm);
+            tx.commit();
+            
+            log.trace ("Checkeando...");
+            
+            return res;
+        }
+
+        catch (Exception e)
+        {
+        	e.printStackTrace();
+        	log.error ("Exception : " + e.getMessage() + "\n" + darDetalleException(e));
+        	return null;
+        }
+        finally
+        {
+            if (tx.isActive())
+            {
+                tx.rollback();
+            }
+            pm.close();
+        }
+    }
+
+    public String rfc10(String group, String idAlojString, String rango_fecha_inferior, String rango_fecha_superior)
+    {
+        PersistenceManager pm = pmf.getPersistenceManager();
+        Transaction tx=pm.currentTransaction();
+        try
+        {
+            tx.begin();
+            String res = sqlAlojamiento.rfc10(pm, group, idAlojString, rango_fecha_inferior, rango_fecha_superior);
+            tx.commit();
+            
+            log.trace ("Checkeando...");
+            
+            return res;
+        }
+
+        catch (Exception e)
+        {
+           	e.printStackTrace();
+        	log.error ("Exception : " + e.getMessage() + "\n" + darDetalleException(e));
+        	return null;
+        }
+        finally
+        {
+            if (tx.isActive())
+            {
+                tx.rollback();
+            }
+            pm.close();
+        }
+    }
+
+    public String rfc11(String group, String idAlojString, String rango_fecha_inferior, String rango_fecha_superior)
+    {
+        PersistenceManager pm = pmf.getPersistenceManager();
+        Transaction tx=pm.currentTransaction();
+        try
+        {
+            tx.begin();
+            String res = sqlAlojamiento.rfc11(pm, group, idAlojString, rango_fecha_inferior, rango_fecha_superior);
+            tx.commit();
+            
+            log.trace ("Checkeando...");
+            
+            return res;
+        }
+
+        catch (Exception e)
+        {
+        	e.printStackTrace();
+        	log.error ("Exception : " + e.getMessage() + "\n" + darDetalleException(e));
+        	return null;
+        }
+        finally
+        {
+            if (tx.isActive())
+            {
+                tx.rollback();
+            }
+            pm.close();
+        }
+    }
+
+    public String rfc12(String group)
+    {
+        PersistenceManager pm = pmf.getPersistenceManager();
+        Transaction tx=pm.currentTransaction();
+        try
+        {
+            tx.begin();
+            String res = sqlAlojamiento.rfc12(pm, group);
+            tx.commit();
+            
+            log.trace ("Checkeando...");
+            
+            return res;
+        }
+
+        catch (Exception e)
+        {
+        	e.printStackTrace();
+        	log.error ("Exception : " + e.getMessage() + "\n" + darDetalleException(e));
+        	return null;
+        }
+        finally
+        {
+            if (tx.isActive())
+            {
+                tx.rollback();
+            }
+            pm.close();
+        }
+    }
 
 	public long eliminarContratoPorId (long id_Contrato) 
 	{
@@ -593,6 +716,36 @@ public class PersistenciaAlohandes
         }
 	}
 
+    public String rfc13(String group, String rango_fecha_inferior, String rango_fecha_superior)
+    {
+        PersistenceManager pm = pmf.getPersistenceManager();
+        Transaction tx=pm.currentTransaction();
+        try
+        {
+            tx.begin();
+            String res = sqlAlojamiento.rfc13(pm, group, rango_fecha_inferior, rango_fecha_superior);
+            tx.commit();
+            
+            log.trace ("Checkeando...");
+            
+            return res;
+        }
+
+        catch (Exception e)
+        {
+        	e.printStackTrace();
+        	log.error ("Exception : " + e.getMessage() + "\n" + darDetalleException(e));
+        	return null;
+        }
+        finally
+        {
+            if (tx.isActive())
+            {
+                tx.rollback();
+            }
+            pm.close();
+        }
+    }
 
 	public List<Contrato> darContratos ()
 	{

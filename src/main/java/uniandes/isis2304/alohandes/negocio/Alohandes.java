@@ -98,6 +98,36 @@ public class Alohandes
 	   return lastId;
 	}
 
+	public String rfc1()
+	{
+		String res = pp.rfc1();
+		return res;
+	}
+
+	public String rfc10(String group, String idAlojString, String rango_fecha_inferior, String rango_fecha_superior)
+	{
+		String res = pp.rfc10(group, idAlojString, rango_fecha_inferior, rango_fecha_superior);
+		return res;
+	}
+
+	public String rfc11(String group, String idAlojString, String rango_fecha_inferior, String rango_fecha_superior)
+	{
+		String res = pp.rfc11(group, idAlojString, rango_fecha_inferior, rango_fecha_superior);
+		return res;
+	}
+
+	public String rfc12(String group)
+	{
+		String res = pp.rfc12(group);
+		return res;
+	}
+
+	public String rfc13(String group, String rango_fecha_inferior, String rango_fecha_superior)
+	{
+		String res = pp.rfc13(group, rango_fecha_inferior, rango_fecha_superior);
+		return res;
+	}
+
 	 /* ****************************************************************
 	 * 			Métodos para manejar las Reservas
 	 *****************************************************************/

@@ -739,6 +739,117 @@ public class InterfazAlohandesApp extends JFrame implements ActionListener
 		}
     }
 
+	/* ****************************************************************
+	 * 			Requisitos Funcionales de Consultas
+	 *****************************************************************/
+	/**
+	 */
+
+	public void rfc1()
+	{
+		String resultado = "\n**************** Ejecutando el requisito funcional de consulta 1 ****************\n";
+		try 
+    	{
+			resultado += "Resultado del Query:\n" + alohandes.rfc1();
+
+			panelDatos.actualizarInterfaz(resultado);
+		} 
+    	catch (Exception e) 
+    	{
+			e.printStackTrace();
+			String resultadoE = generarMensajeError(e);
+			panelDatos.actualizarInterfaz(resultadoE);
+		}
+	} 
+
+	public void rfc10()
+	{
+		String resultado = "\n**************** Ejecutando el requisito funcional de consulta 10 ****************\n";
+		try 
+    	{
+			String group = JOptionPane.showInputDialog (this, "Escoja el tipo de agrupamiento y ordenamiento (ingrese el numero):\n1. Informacion del cliente\n2. Por oferta de alojamiento\n3. Tipo de alojamiento", "RFC10", JOptionPane.QUESTION_MESSAGE);
+			String idAlojString = JOptionPane.showInputDialog (this, "Ingrese el id del alojamiento:", "RFC10", JOptionPane.QUESTION_MESSAGE);
+			String rango_fecha_inferior = JOptionPane.showInputDialog (this, "Ingrese el rango de fecha inferior (ej, '2003/10/20')", "RFC10", JOptionPane.QUESTION_MESSAGE);
+			String rango_fecha_superior = JOptionPane.showInputDialog (this, "Ingrese el rango de fecha superior (ej, '2003/10/20')", "RFC10", JOptionPane.QUESTION_MESSAGE);
+			String res = alohandes.rfc10(group, idAlojString, rango_fecha_inferior, rango_fecha_superior);
+			
+			resultado += "Resultado del Query:\n" + res;
+
+			panelDatos.actualizarInterfaz(resultado);
+		} 
+    	catch (Exception e) 
+    	{
+			e.printStackTrace();
+			String resultadoE = generarMensajeError(e);
+			panelDatos.actualizarInterfaz(resultadoE);
+		}
+	} 
+
+	public void rfc11()
+	{
+		String resultado = "\n**************** Ejecutando el requisito funcional de consulta 11 ****************\n";
+		try
+    	{
+			String group = JOptionPane.showInputDialog (this, "Escoja el tipo de agrupamiento y ordenamiento (ingrese el numero):\n1. Informacion del cliente\n2. Por oferta de alojamiento\n3. Tipo de alojamiento", "RFC11", JOptionPane.QUESTION_MESSAGE);
+			String idAlojString = JOptionPane.showInputDialog (this, "Ingrese el id del alojamiento:", "RFC10", JOptionPane.QUESTION_MESSAGE);
+			String rango_fecha_inferior = JOptionPane.showInputDialog (this, "Ingrese el rango de fecha inferior (ej, '2003/10/20')", "RFC11", JOptionPane.QUESTION_MESSAGE);
+			String rango_fecha_superior = JOptionPane.showInputDialog (this, "Ingrese el rango de fecha superior (ej, '2004/14/20')", "RFC11", JOptionPane.QUESTION_MESSAGE);
+			String res = alohandes.rfc11(group, idAlojString, rango_fecha_inferior, rango_fecha_superior);
+			
+			resultado += "Resultado del Query:\n" + res;
+
+			panelDatos.actualizarInterfaz(resultado);
+		} 
+    	catch (Exception e) 
+    	{
+			e.printStackTrace();
+			String resultadoE = generarMensajeError(e);
+			panelDatos.actualizarInterfaz(resultadoE);
+		}
+	} 
+
+	public void rfc12()
+	{
+		String resultado = "\n**************** Ejecutando el requisito funcional de consulta 12 ****************\n";
+		try
+    	{
+			String group = JOptionPane.showInputDialog (this, "Escoja la consulta a realizar (ingrese el numero):\n1. RF12: ALOJAMIENTO DE MINIMA OCUPACION\n2. RF12: OPERADORES MAS SOLICITADOS\n3. RF12: OPERADORES MENOS SOLICITADOS", "RFC12", JOptionPane.QUESTION_MESSAGE);
+			String res = alohandes.rfc12(group);
+			
+			resultado += "Resultado del Query:\n" + res;
+
+			panelDatos.actualizarInterfaz(resultado);
+		} 
+    	catch (Exception e) 
+    	{
+			e.printStackTrace();
+			String resultadoE = generarMensajeError(e);
+			panelDatos.actualizarInterfaz(resultadoE);
+		}
+	} 
+
+	public void rfc13()
+	{
+		String resultado = "\n**************** Ejecutando el requisito funcional de consulta 13 ****************\n";
+		try
+    	{
+			String group = JOptionPane.showInputDialog (this, "Escoja la consulta a realizar (ingrese el numero):\n1. RF13: CLIENTE BUENO TIPO 1 (hace al menos 1 reserva al mes)\n2. RF13: CLIENTE BUENO TIPO 2 (Reservan siempre alojamientos costosos)\n3. RF13: CLIENTE BUENO TIPO 3 (Reservan siempre alojamientos tipo suite)", "RFC13", JOptionPane.QUESTION_MESSAGE);
+			String rango_fecha_inferior = JOptionPane.showInputDialog (this, "Ingrese el rango de fecha inferior MES (ej, '2003/10/20')", "RFC13", JOptionPane.QUESTION_MESSAGE);
+			String rango_fecha_superior = JOptionPane.showInputDialog (this, "Ingrese el rango de fecha superior MES (ej, '2003/11/20')", "RFC13", JOptionPane.QUESTION_MESSAGE);
+			String res = alohandes.rfc13(group, rango_fecha_inferior, rango_fecha_superior);
+			
+			resultado += "Resultado del Query:\n" + res;
+
+			panelDatos.actualizarInterfaz(resultado);
+		} 
+    	catch (Exception e) 
+    	{
+			e.printStackTrace();
+			String resultadoE = generarMensajeError(e);
+			panelDatos.actualizarInterfaz(resultadoE);
+		}
+	} 
+
 	/**
 	 * @RF5 parametrizado
      * Borra de la base de datos la Reserva con el identificador dado por el usuario
